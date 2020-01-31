@@ -20,6 +20,11 @@ html, body, main, ul, li {
   list-style: none;
 }
 
+main {
+  display: flex;
+  background-color: green;
+}
+
 //// Defined ////
 
 .top-HeaderMenu {
@@ -41,3 +46,15 @@ html, body, main, ul, li {
     }
   }
 }
+
+.top-Sidebar {
+  display: inline-block;
+  white-space:nowrap;
+  background-color: red;
+}
+
+.top-Content {
+  width: 100%;
+  background-color: blue;
+}
+
