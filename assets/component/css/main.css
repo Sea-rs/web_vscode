@@ -120,14 +120,13 @@ html, body, main, ul, li {
   display: inline-block;
   width: 6px;
   height: 6px;
-  position: absolute;
-  top: 0.6em;
   border-top: solid 2px #dadada;
   border-right: solid 2px #dadada;
+  position: absolute;
+  top: 0.6em;
+  left: 6px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  left: 6px;
-  transform: rotate(45deg);
 }
 
 .home-Main_NameSpace {
@@ -142,13 +141,12 @@ html, body, main, ul, li {
   display: inline-block;
   width: 6px;
   height: 6px;
-  position: absolute;
-  top: 0.6em;
   border-top: solid 2px #dadada;
   border-right: solid 2px #dadada;
+  position: absolute;
+  top: 0.6em;
+  left: 18px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  left: 18px;
-  transform: rotate(45deg);
 }
 /*# sourceMappingURL=main.css.map */

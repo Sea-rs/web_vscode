@@ -11,9 +11,8 @@ $hoverd: #2e3534;
   display: inline-block;
   width: 6px;
   height: 6px;
-  position: absolute;
-  top: 0.6em;
   border-top: solid 2px $dark-white;
   border-right: solid 2px $dark-white;
-  transform: rotate(45deg);
+  position: absolute;
+  top: 0.6em;
 }
