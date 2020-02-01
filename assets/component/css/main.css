@@ -33,59 +33,59 @@ html, body, main, ul, li {
   width: 100%;
 }
 
-.top-Header {
+.home-Header {
   display: inline-block;
   width: 100%;
 }
 
-.top-HeaderMenu {
+.home-Header_Menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
   background-color: #242424;
 }
 
-.top-HeaderMenu .top-HeaderMenu_Item {
+.home-Header_Menu .home-Header_MenuItem {
   margin-right: 26px;
-  font-size: 1.6rem;
   color: #0fafa5;
+  font-size: 1.6rem;
 }
 
-.top-HeaderMenu .top-HeaderMenu_Icon {
+.home-Header_Menu .home-Header_MenuIcon {
   height: 25px;
   width: 25px;
   background-color: #0fafa5;
 }
 
-.top-Main {
+.home-Main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-.top-Sidebar {
+.home-Main_SideArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #242424;
 }
 
-.top-Sidebar .top-SidebarMenu {
+.home-Main_SideArea .home-Main_Menu {
   padding: 20px 20px 0;
 }
 
-.top-Sidebar .top-Sidebar_Item {
+.home-Main_SideArea .home-Sidebar_MenuItem {
   height: 32px;
   width: 32px;
   margin-bottom: 26px;
 }
 
-.top-Sidebar .top-SideList {
+.home-Main_SideArea .home-SideList {
   width: 270px;
   color: white;
 }

@@ -38,24 +38,24 @@ html, body, main, ul, li {
 }
 
 //// Parts ////
-.top-Header {
+.home-Header {
   display: inline-block;
   width: 100%;
 }
 
-.top-HeaderMenu {
+.home-Header_Menu {
   display: flex;
-  align-items: center;
   padding: 10px 15px;
+  align-items: center;
   background-color: $dark-gray;
 
-  .top-HeaderMenu_Item {
+  .home-Header_MenuItem {
     margin-right: 26px;
-    font-size: 1.6rem;
     color: $brand;
+    font-size: 1.6rem;
   }
 
-  .top-HeaderMenu_Icon {
+  .home-Header_MenuIcon {
     //Dummy. change icon image.
     height: 25px;
     width: 25px;
@@ -63,27 +63,27 @@ html, body, main, ul, li {
   }
 }
 
-.top-Main {
+.home-Main {
   display: flex;
   height: 100%;
 }
 
-.top-Sidebar {
+.home-Main_SideArea {
   display: flex;
   background-color: $dark-gray;
 
-  .top-SidebarMenu {
+  .home-Main_Menu {
     padding: 20px 20px 0;
   }
 
-  .top-Sidebar_Item {
+  .home-Sidebar_MenuItem {
     //Dummy. change image.
     height: 32px;
     width: 32px;
     margin-bottom: 26px;
   }
 
-  .top-SideList {
+  .home-SideList {
     width: 270px;
     color: white;
   }
