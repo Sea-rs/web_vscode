@@ -73,41 +73,41 @@ html, body, main, ul, li {
   height: 100%;
 }
 
-.home-Main_SideArea {
+.home-SideArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #242424;
 }
 
-.home-Main_SideArea .home-Main_Menu {
+.home-SideArea .home-SideArea_Menu {
   padding: 20px 20px 0;
 }
 
-.home-Main_SideArea .home-Sidebar_MenuItem {
+.home-SideArea .home-SideArea_MenuItem {
   height: 32px;
   width: 32px;
   margin-bottom: 26px;
 }
 
-.home-Main_SideArea .home-SideList {
+.home-SideArea .home-SideList {
   width: 270px;
   color: white;
 }
 
-.home-Main_List {
+.home-List {
   width: 270px;
   color: #dadada;
   background-color: #242424;
 }
 
-.home-Main_Explorer {
+.home-List_Explorer {
   padding: 13px 0 13px 30px;
   color: #dadada;
   font-size: 1.4rem;
 }
 
-.home-Main_Label {
+.home-List_Label {
   padding: 4px 26px;
   font-size: 1.6rem;
   position: relative;
@@ -115,7 +115,7 @@ html, body, main, ul, li {
   cursor: pointer;
 }
 
-.home-Main_Label::before {
+.home-List_Label::before {
   content: '';
   display: inline-block;
   width: 6px;
@@ -129,14 +129,14 @@ html, body, main, ul, li {
           transform: rotate(45deg);
 }
 
-.home-Main_NameSpace {
+.home-List_NameSpace {
   padding: 4px 36px;
   font-size: 1.6rem;
   position: relative;
   cursor: pointer;
 }
 
-.home-Main_NameSpace::before {
+.home-List_NameSpace::before {
   content: '';
   display: inline-block;
   width: 6px;

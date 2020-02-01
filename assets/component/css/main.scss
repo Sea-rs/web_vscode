@@ -75,15 +75,15 @@ html, body, main, ul, li {
   height: 100%;
 }
 
-.home-Main_SideArea {
+.home-SideArea {
   display: flex;
   background-color: $dark-gray;
 
-  .home-Main_Menu {
+  .home-SideArea_Menu {
     padding: 20px 20px 0;
   }
 
-  .home-Sidebar_MenuItem {
+  .home-SideArea_MenuItem {
     //Dummy. change image.
     height: 32px;
     width: 32px;
@@ -96,19 +96,19 @@ html, body, main, ul, li {
   }
 }
 
-.home-Main_List {
+.home-List {
   width: 270px;
   color: $dark-white;
   background-color: $gray;
 }
 
-.home-Main_Explorer {
+.home-List_Explorer {
   padding: 13px 0 13px 30px;
   color: $dark-white;
   font-size: 1.4rem;
 }
 
-.home-Main_Label {
+.home-List_Label {
   padding: 4px 26px;
   font-size: $font-m;
   position: relative;
@@ -122,7 +122,7 @@ html, body, main, ul, li {
   }
 }
 
-.home-Main_NameSpace {
+.home-List_NameSpace {
   padding: 4px 36px;
   font-size: $font-m;
   position: relative;
