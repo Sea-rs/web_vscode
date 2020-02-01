@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 html, body {
@@ -37,6 +38,12 @@ html, body, main, ul, li {
   width: 100%;
 }
 
+.sw-hoverd {
+  &:hover {
+    background-color: $hoverd;
+  }
+}
+
 //// Parts ////
 .home-Header {
   display: inline-block;
@@ -52,13 +59,13 @@ html, body, main, ul, li {
   .home-Header_MenuItem {
     margin-right: 26px;
     color: $brand;
-    font-size: 1.6rem;
+    font-size: $font-m;
   }
 
   .home-Header_MenuIcon {
     //Dummy. change icon image.
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: #0fafa5;
   }
 }
@@ -86,5 +93,58 @@ html, body, main, ul, li {
   .home-SideList {
     width: 270px;
     color: white;
+  }
+}
+
+.home-Main_List {
+  width: 270px;
+  color: $dark-white;
+  background-color: $gray;
+}
+
+.home-Main_Explorer {
+  padding: 13px 0 13px 30px;
+  color: $dark-white;
+  font-size: 1.4rem;
+}
+
+.home-Main_Label {
+  padding: 4px 26px;
+  font-size: $font-m;
+  position: relative;
+  background-color: $dark-brand;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 0.6em;
+    left: 6px;
+    border-top: solid 2px $dark-white;
+    border-right: solid 2px $dark-white;
+    transform: rotate(45deg);
+  }
+}
+
+.home-Main_NameSpace {
+  padding: 4px 36px;
+  font-size: $font-m;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 0.6em;
+    left: 18px;
+    border-top: solid 2px $dark-white;
+    border-right: solid 2px $dark-white;
+    transform: rotate(45deg);
   }
 }

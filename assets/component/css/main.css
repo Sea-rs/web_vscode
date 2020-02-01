@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 html, body {
@@ -33,6 +34,10 @@ html, body, main, ul, li {
   width: 100%;
 }
 
+.sw-hoverd:hover {
+  background-color: #2e3534;
+}
+
 .home-Header {
   display: inline-block;
   width: 100%;
@@ -56,8 +61,8 @@ html, body, main, ul, li {
 }
 
 .home-Header_Menu .home-Header_MenuIcon {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   background-color: #0fafa5;
 }
 
@@ -88,5 +93,60 @@ html, body, main, ul, li {
 .home-Main_SideArea .home-SideList {
   width: 270px;
   color: white;
+}
+
+.home-Main_List {
+  width: 270px;
+  color: #dadada;
+  background-color: #242424;
+}
+
+.home-Main_Explorer {
+  padding: 13px 0 13px 30px;
+  color: #dadada;
+  font-size: 1.4rem;
+}
+
+.home-Main_Label {
+  padding: 4px 26px;
+  font-size: 1.6rem;
+  position: relative;
+  background-color: #0c635d;
+  cursor: pointer;
+}
+
+.home-Main_Label::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 0.6em;
+  left: 6px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.home-Main_NameSpace {
+  padding: 4px 36px;
+  font-size: 1.6rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.home-Main_NameSpace::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 0.6em;
+  left: 18px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=main.css.map */
