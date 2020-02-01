@@ -9,6 +9,16 @@ html {
   font-size: 62.5%;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -20,12 +30,18 @@ html, body, main, ul, li {
   list-style: none;
 }
 
-main {
-  display: flex;
-  background-color: green;
+//// Defined ////
+//// Parts ////
+.img-FitParent {
+  height: 100%;
+  width: 100%;
 }
 
-//// Defined ////
+//// Parts ////
+.top-Header {
+  display: inline-block;
+  width: 100%;
+}
 
 .top-HeaderMenu {
   display: flex;
@@ -37,24 +53,38 @@ main {
     margin-right: 26px;
     font-size: 1.6rem;
     color: $brand;
+  }
 
-    .top-HeaderMenu_Icon {
-      //Dummy. change icon image.
-      height: 25px;
-      width: 25px;
-      background-color: #ff0000;
-    }
+  .top-HeaderMenu_Icon {
+    //Dummy. change icon image.
+    height: 25px;
+    width: 25px;
+    background-color: #0fafa5;
   }
 }
 
+.top-Main {
+  display: flex;
+  height: 100%;
+}
+
 .top-Sidebar {
-  display: inline-block;
-  white-space:nowrap;
-  background-color: red;
-}
+  display: flex;
+  background-color: $dark-gray;
 
-.top-Content {
-  width: 100%;
-  background-color: blue;
-}
+  .top-SidebarMenu {
+    padding: 20px 20px 0;
+  }
 
+  .top-Sidebar_Item {
+    //Dummy. change image.
+    height: 32px;
+    width: 32px;
+    margin-bottom: 26px;
+  }
+
+  .top-SideList {
+    width: 270px;
+    color: white;
+  }
+}

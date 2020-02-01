@@ -2,6 +2,21 @@ html {
   font-size: 62.5%;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,11 +28,14 @@ html, body, main, ul, li {
   list-style: none;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: green;
+.img-FitParent {
+  height: 100%;
+  width: 100%;
+}
+
+.top-Header {
+  display: inline-block;
+  width: 100%;
 }
 
 .top-HeaderMenu {
@@ -37,20 +55,38 @@ main {
   color: #0fafa5;
 }
 
-.top-HeaderMenu .top-HeaderMenu_Item .top-HeaderMenu_Icon {
+.top-HeaderMenu .top-HeaderMenu_Icon {
   height: 25px;
   width: 25px;
-  background-color: #ff0000;
+  background-color: #0fafa5;
+}
+
+.top-Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 
 .top-Sidebar {
-  display: inline-block;
-  white-space: nowrap;
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #242424;
 }
 
-.top-Content {
-  width: 100%;
-  background-color: blue;
+.top-Sidebar .top-SidebarMenu {
+  padding: 20px 20px 0;
+}
+
+.top-Sidebar .top-Sidebar_Item {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 26px;
+}
+
+.top-Sidebar .top-SideList {
+  width: 270px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
