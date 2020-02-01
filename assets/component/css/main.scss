@@ -116,14 +116,7 @@ html, body, main, ul, li {
   cursor: pointer;
 
   &::before {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-top: solid 2px $dark-white;
-    border-right: solid 2px $dark-white;
-    position: absolute;
-    top: 0.6em;
+    @include open-icon;
     left: 6px;
     transform: rotate(45deg);
   }
@@ -136,14 +129,7 @@ html, body, main, ul, li {
   cursor: pointer;
 
   &::before {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    border-top: solid 2px $dark-white;
-    border-right: solid 2px $dark-white;
-    top: 0.6em;
+    @include open-icon;
     left: 18px;
     transform: rotate(45deg);
   }
