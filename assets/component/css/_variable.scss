@@ -1,2 +1,18 @@
 $brand: #0fafa5;
 $dark-gray: #242424;
+$dark-white: #dadada;
+$dark-brand: #0c635d;
+$font-m: 1.6rem;
+$gray: #242424;
+$hoverd: #2e3534;
+
+@mixin open-icon {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px $dark-white;
+  border-right: solid 2px $dark-white;
+  position: absolute;
+  top: 0.6em;
+}

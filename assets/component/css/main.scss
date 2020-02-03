@@ -7,6 +7,17 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -20,41 +31,106 @@ html, body, main, ul, li {
   list-style: none;
 }
 
-main {
-  display: flex;
-  background-color: green;
+//// Defined ////
+//// Parts ////
+.img-FitParent {
+  height: 100%;
+  width: 100%;
 }
 
-//// Defined ////
-
-.top-HeaderMenu {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  background-color: $dark-gray;
-
-  .top-HeaderMenu_Item {
-    margin-right: 26px;
-    font-size: 1.6rem;
-    color: $brand;
-
-    .top-HeaderMenu_Icon {
-      //Dummy. change icon image.
-      height: 25px;
-      width: 25px;
-      background-color: #ff0000;
-    }
+.sw-hoverd {
+  &:hover {
+    background-color: $hoverd;
   }
 }
 
-.top-Sidebar {
+//// Parts ////
+.home-Header {
   display: inline-block;
-  white-space:nowrap;
-  background-color: red;
-}
-
-.top-Content {
   width: 100%;
-  background-color: blue;
 }
 
+.home-Header_Menu {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: $dark-gray;
+
+  .home-Header_MenuItem {
+    margin-right: 26px;
+    color: $brand;
+    font-size: $font-m;
+  }
+
+  .home-Header_MenuIcon {
+    //Dummy. change icon image.
+    height: 20px;
+    width: 20px;
+    background-color: #0fafa5;
+  }
+}
+
+.home-Main {
+  display: flex;
+  height: 100%;
+}
+
+.home-SideArea {
+  display: flex;
+  background-color: $dark-gray;
+
+  .home-SideArea_Menu {
+    padding: 20px 20px 0;
+  }
+
+  .home-SideArea_MenuItem {
+    //Dummy. change image.
+    height: 32px;
+    width: 32px;
+    margin-bottom: 26px;
+  }
+
+  .home-SideList {
+    width: 270px;
+    color: white;
+  }
+}
+
+.home-List {
+  width: 270px;
+  color: $dark-white;
+  background-color: $gray;
+}
+
+.home-List_Explorer {
+  padding: 13px 0 13px 30px;
+  color: $dark-white;
+  font-size: 1.4rem;
+}
+
+.home-List_Label {
+  padding: 4px 26px;
+  font-size: $font-m;
+  position: relative;
+  background-color: $dark-brand;
+  cursor: pointer;
+
+  &::before {
+    @include open-icon;
+    left: 6px;
+    transform: rotate(45deg);
+  }
+}
+
+.home-List_NameSpace {
+  padding: 4px 36px;
+  font-size: $font-m;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    @include open-icon;
+    left: 18px;
+    transform: rotate(45deg);
+  }
+}
