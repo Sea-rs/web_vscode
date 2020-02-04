@@ -29,13 +29,125 @@ html, body, main, ul, li {
   list-style: none;
 }
 
-.img-FitParent {
+.img-FitParentSize {
   height: 100%;
   width: 100%;
 }
 
 .sw-hoverd:hover {
   background-color: #2e3534;
+}
+
+.home-List_Label-open::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  position: absolute;
+  left: 6px;
+  top: 0.5em;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.home-List_Label-close::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  position: absolute;
+  left: 6px;
+  top: 0.6em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.home-List_NameSpace-open::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  position: absolute;
+  left: 18px;
+  top: 0.5em;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.home-List_NameSpace-close::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px #dadada;
+  border-right: solid 2px #dadada;
+  position: absolute;
+  left: 18px;
+  top: 0.6em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sw-closed {
+  display: none;
+}
+
+@-webkit-keyframes home-Icon-Open {
+  0% {
+    top: 0.6em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    top: 0.5em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@keyframes home-Icon-Open {
+  0% {
+    top: 0.6em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    top: 0.5em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
+@-webkit-keyframes home-Icon-Close {
+  0% {
+    top: 0.5em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    top: 0.6em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes home-Icon-Close {
+  0% {
+    top: 0.5em;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    top: 0.6em;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
 }
 
 .home-Header {
@@ -112,21 +224,11 @@ html, body, main, ul, li {
   font-size: 1.6rem;
   position: relative;
   background-color: #0c635d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
-}
-
-.home-List_Label::before {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-top: solid 2px #dadada;
-  border-right: solid 2px #dadada;
-  position: absolute;
-  top: 0.6em;
-  left: 6px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .home-List_NameSpace {
@@ -134,19 +236,20 @@ html, body, main, ul, li {
   font-size: 1.6rem;
   position: relative;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.home-List_NameSpace::before {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-top: solid 2px #dadada;
-  border-right: solid 2px #dadada;
-  position: absolute;
-  top: 0.6em;
-  left: 18px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.home-List_Item {
+  padding: 4px 46px;
+  font-size: 1.6rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=main.css.map */
