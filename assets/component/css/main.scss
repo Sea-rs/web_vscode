@@ -44,7 +44,70 @@ html, body, main, ul, li {
   }
 }
 
+.home-List_Label-open {
+  &::before {
+    @include open-icon;
+    left: 6px;
+    top: 0.5em;
+    transform: rotate(135deg);
+  }
+}
+
+.home-List_Label-close {
+  &::before {
+    @include open-icon;
+    left: 6px;
+    top: 0.6em;
+    transform: rotate(45deg);
+  }
+}
+
+.home-List_NameSpace-open {
+  &::before {
+    @include open-icon;
+    left: 18px;
+    top: 0.5em;
+    transform: rotate(135deg);
+  }
+}
+
+.home-List_NameSpace-close {
+  &::before {
+    @include open-icon;
+    left: 18px;
+    top: 0.6em;
+    transform: rotate(45deg);
+  }
+}
+
+.sw-closed {
+  display: none;
+}
 //// Parts ////
+//// Animation ////
+
+@keyframes home-Icon-Open {
+  0% {
+    top: 0.6em;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: 0.5em;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes home-Icon-Close {
+  0% {
+    top: 0.5em;
+    transform: rotate(135deg);
+  }
+  100% {
+    top: 0.6em;
+    transform: rotate(45deg);
+  }
+}
+//// Animation ////
 .home-Header {
   display: inline-block;
   width: 100%;
@@ -113,13 +176,8 @@ html, body, main, ul, li {
   font-size: $font-m;
   position: relative;
   background-color: $dark-brand;
+  user-select: none;
   cursor: pointer;
-
-  &::before {
-    @include open-icon;
-    left: 6px;
-    transform: rotate(45deg);
-  }
 }
 
 .home-List_NameSpace {
@@ -127,10 +185,13 @@ html, body, main, ul, li {
   font-size: $font-m;
   position: relative;
   cursor: pointer;
+  user-select: none;
+}
 
-  &::before {
-    @include open-icon;
-    left: 18px;
-    transform: rotate(45deg);
-  }
+.home-List_Item {
+  padding: 4px 46px;
+  font-size: $font-m;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
