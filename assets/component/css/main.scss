@@ -21,6 +21,8 @@ body {
 }
 
 a {
+  display: inline-block;
+  height: 100%;
   color: inherit;
   text-decoration: none;
 }
@@ -109,27 +111,36 @@ html, body, main, ul, li {
 }
 //// Animation ////
 .home-Header {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: 100%;
+  background-color: $dark-gray;
+
+  .home-Header_MenuIcon {
+    margin: 0 10px;
+
+    img {
+      //Dummy. change icon image.
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 .home-Header_Menu {
   display: flex;
-  padding: 10px 15px;
   align-items: center;
-  background-color: $dark-gray;
+  width: 100%;
 
   .home-Header_MenuItem {
-    margin-right: 26px;
+    height: 2em;
     color: $brand;
     font-size: $font-m;
-  }
 
-  .home-Header_MenuIcon {
-    //Dummy. change icon image.
-    height: 20px;
-    width: 20px;
-    background-color: #0fafa5;
+    a {
+      vertical-align: sub;
+      padding: 0 10px;
+    }
   }
 }
 
