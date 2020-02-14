@@ -11,38 +11,42 @@ window.addEventListener('DOMContentLoaded', function() {
     let homeListNameSpaceClose = 'home-List_NameSpace-close';
     let swClosed = 'sw-closed';
 
-    let isOpened;
-
-    allListLabel.forEach(function(listItem, index) {
+    allListLabel.forEach(function(listItem) {
       listItem.addEventListener('click', function(self) {
-        isOpened = self.target.classList.contains(homeListLabelOpen);
+        let isOpened = self.target.classList.contains(homeListLabelOpen);
 
         if(isOpened) {
           self.target.classList.remove(homeListLabelOpen);
           self.target.classList.add(homeListLabelClose);
-          allListNamespace[index].classList.add(swClosed);
+          self.target.nextElementSibling.classList.add(swClosed);
+
         } else {
           self.target.classList.add(homeListLabelOpen);
           self.target.classList.remove(homeListLabelClose);
-          allListNamespace[index].classList.remove(swClosed);
+          self.target.nextElementSibling.classList.remove(swClosed);
+
         }
       });
     });
 
-    allListNamespace.forEach(function(listItem, index) {
+    allListNamespace.forEach(function(listItem) {
       listItem.addEventListener('click', function(self) {
-        isOpened = self.target.classList.contains(homeListNameSpaceOpen);
+        let isOpened = self.target.classList.contains(homeListNameSpaceOpen);
 
         if(isOpened) {
           self.target.classList.remove(homeListNameSpaceOpen);
           self.target.classList.add(homeListNameSpaceClose);
-          allListItem[index].classList.add(swClosed);
+          self.target.nextElementSibling.classList.add(swClosed);
+
         } else {
           self.target.classList.add(homeListNameSpaceOpen);
           self.target.classList.remove(homeListNameSpaceClose);
-          allListItem[index].classList.remove(swClosed);
+          self.target.nextElementSibling.classList.remove(swClosed);
+
         }
       });
     });
+
+    
   })();
 });
