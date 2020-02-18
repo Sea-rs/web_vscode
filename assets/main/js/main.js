@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
   //Click event when clicked at list item in side area.
   (function() {
     let allListLabel = document.querySelectorAll('.home-List_Label');
@@ -46,7 +46,80 @@ window.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
+  })();
 
-    
+  //Fetch contents by ajax.
+  (function() {
+    var jsHomeMain = document.getElementById('js-home-Main');
+    var contentsID = 'home-content';
+
+    (function() {
+      let xhrObj = new XMLHttpRequest();
+
+      xhrObj.open('GET', './assets/component/article/html/header.html');
+      xhrObj.responseType = 'document';
+      xhrObj.send();
+
+      xhrObj.onreadystatechange = function () {
+        if (xhrObj.status !== 200) {
+          return;
+        }
+
+        if (xhrObj.readyState === 4) {
+          if (document.getElementById(contentsID) !== null) {
+            jsHomeMain.replaceChild(xhrObj.response.getElementById(contentsID), document.getElementById(contentsID));
+
+          } else {
+            jsHomeMain.appendChild(xhrObj.response.getElementById(contentsID));
+          }
+        }
+      }
+    })();
+
+    document.getElementById('js-Component_SW_Header').addEventListener('click', function() {
+      let xhrObj = new XMLHttpRequest();
+
+      xhrObj.open('GET', './assets/component/article/html/header.html');
+      xhrObj.responseType = 'document';
+      xhrObj.send();
+
+      xhrObj.onreadystatechange = function () {
+        if (xhrObj.status !== 200) {
+          return;
+        }
+
+        if (xhrObj.readyState === 4) {
+          if (document.getElementById(contentsID) !== null) {
+            jsHomeMain.replaceChild(xhrObj.response.getElementById(contentsID), document.getElementById(contentsID));
+
+          } else {
+            jsHomeMain.appendChild(xhrObj.response.getElementById(contentsID));
+          }
+        }
+      }
+    });
+
+    document.getElementById('js-Component_Art_Header').addEventListener('click', function() {
+      let xhrObj = new XMLHttpRequest();
+
+      xhrObj.open('GET', './assets/component/sitewide/html/header.html');
+      xhrObj.responseType = 'document';
+      xhrObj.send();
+
+      xhrObj.onreadystatechange = function () {
+        if (xhrObj.status !== 200) {
+          return;
+        }
+
+        if (xhrObj.readyState === 4) {
+          if (document.getElementById(contentsID) !== null) {
+            jsHomeMain.replaceChild(xhrObj.response.getElementById(contentsID), document.getElementById(contentsID));
+
+          } else {
+            jsHomeMain.appendChild(xhrObj.response.getElementById(contentsID));
+          }
+        }
+      }
+    });
   })();
 });
