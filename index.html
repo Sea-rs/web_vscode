@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
     <title>Web Develop</title>
-    <link rel="stylesheet" href="assets/component/css/main.css">
+    <link rel="stylesheet" href="assets/main/css/main.css">
   </head>
   <body>
     <header class="home-Header">
       <div class="home-Header_MenuIcon">
-        <img src="assets/img/icon1.png">
+        <img src="assets/main/img/icon1.png">
       </div>
       <ul class="home-Header_Menu">
         <li class="home-Header_MenuItem sw-hoverd"><a href="">Home</a></li>
@@ -21,13 +21,13 @@
         <li class="home-Header_MenuItem sw-hoverd"><a href="">PHP</a></li>
       </ul>
     </header>
-    <div class="home-Main">
+    <div id="js-home-Main" class="home-Main">
       <div class="home-SideArea">
         <ul class="home-SideArea_Menu">
-          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/img/icon1.png" class="img-FitParentSize"></a></li><!--コンポーネントなどの技術-->
-          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/img/icon1.png" class="img-FitParentSize"></a></li><!--検索機能（仮）-->
-          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/img/icon1.png" class="img-FitParentSize"></a></li><!--プロフィール-->
-          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/img/icon1.png" class="img-FitParentSize"></a></li><!--自作品画集-->
+          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/main/img/icon1.png" class="img-FitParentSize"></a></li><!--コンポーネントなどの技術-->
+          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/main/img/icon1.png" class="img-FitParentSize"></a></li><!--検索機能（仮）-->
+          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/main/img/icon1.png" class="img-FitParentSize"></a></li><!--プロフィール-->
+          <li class="home-SideArea_MenuItem"><a href="#"><img src="assets/main/img/icon1.png" class="img-FitParentSize"></a></li><!--自作品画集-->
         </ul>
         <ul class="home-List">
           <div class="home-List_Explorer">EXPLORER</div>
@@ -39,14 +39,14 @@
                   <li class="home-List_NameSpace home-List_NameSpace-close sw-hoverd">SideWide</li>
                   <li class="sw-closed">
                     <ul>
-                      <li class="home-List_Item sw-hoverd">Header</li>
+                      <li id="js-Component_SW_Header" class="home-List_Item sw-hoverd">Header</li>
                       <li class="home-List_Item sw-hoverd">Header</li>
                     </ul>
                   </li>
                   <li class="home-List_NameSpace home-List_NameSpace-close sw-hoverd">Article</li>
                   <li  class="sw-closed">
                     <ul>
-                      <li class="home-List_Item sw-hoverd">Header</li>
+                      <li id="js-Component_Art_Header" class="home-List_Item sw-hoverd">Header</li>
                       <li class="home-List_Item sw-hoverd">Header</li>
                     </ul>
                   </li>
@@ -70,6 +70,6 @@
       </div>
     </div>
     <footer></footer>
-    <script type="text/javascript" src="assets/component/js/main.js"></script>
+    <script type="text/javascript" src="assets/main/js/main.js"></script>
   </body>
 </html>
